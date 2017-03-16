@@ -1,11 +1,11 @@
-var playlist = new Object
+var playlist = {'hi' : 'what'}
 
-function updatePlayslist(obj, key, value){
+function updatePlaylist(obj, key, value){
   obj[key] = value
   return obj
 }
 
 function removeFromPlaylist(obj, key){
-  delete obj.key
-  return obj
+  delete obj[key]
+  
 }
